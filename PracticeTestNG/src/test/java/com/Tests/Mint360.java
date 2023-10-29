@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class Mint360 {
 	WebDriver driver;
-
+//edit test
 
 	@Test
 	public void launchBrowser()  {
