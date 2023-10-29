@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="GroupsSuite">
+	<test name="GroupsNewTest">
+		<groups>
+			<define name="dailybuild">
+				<include name="smoke" />
+				<include name="sanity" />
+				<include name="functional" />
+			</define>
+				<define name="weeklybuild">
+				<include name="functional" />
+			</define>
+			<run>
+				<include name="weeklybuild" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.Tests.NewTest" />
+			<class name="com.Tests.NewTest2" />
+		</classes>
+	</test>
+
+
+</suite> 
